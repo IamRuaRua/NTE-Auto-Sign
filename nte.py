@@ -515,7 +515,7 @@ def user_center_login(token, user_id, device_id):
         'deviceid': device_id,
         'authorization': '',
         'appversion': APPVERSION,
-        'uid': '10100300',
+        'uid': '10000000',
         'User-Agent': OKHTTP_UA,
     }
     payload = {
@@ -538,7 +538,7 @@ def refresh_access_token(account):
         'deviceid': account['deviceId'],
         'authorization': account['refreshToken'],
         'appversion': APPVERSION,
-        'uid': '10100300',
+        'uid': '10000000',
         'User-Agent': OKHTTP_UA,
     }
     response = requests.post(REFRESH_TOKEN_URL, headers=headers)
